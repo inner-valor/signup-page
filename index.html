@@ -11,62 +11,77 @@
 <body>
     <main>
         <aside>
-            <div>
+            <div class="logo">
                 <img src="cupcake-logo.png" alt="logo">
             </div>
         </aside>
         <section>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque asperiores aspernatur suscipit tenetur dolore. Quis beatae aut deleniti alias optio quod distinctio perspiciatis, omnis possimus molestiae ipsa iste doloribus inventore!</p>
+            <div class="register-info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque asperiores aspernatur suscipit
+                    tenetur dolore. Quis beatae aut deleniti alias optio quod distinctio perspiciatis, omnis possimus
+                    molestiae ipsa iste doloribus inventore!</p>
                 <p>blah blah blah</p>
             </div>
             <form action="">
                 <div>
-                    <h1>Register</h1>
-                    <p><span>required*</span></p>
-                    <div>
-                        <label for="first-name">
-                            First name*:
+
+
+                    <div class="input-info">
+                        <h1>Register</h1>
+                        <p><span>required*</span></p>
+                    </div>
+                    <div class="input-field">
+
+
+                        <div>
+                            <label for="first-name">
+                                First name*:
+                            </label>
+                            <br>
                             <input type="text" id="first-name" name="f-name">
-                            
-                        </label>
-                    </div>
-                    <div>
-                        <label for="last-name">
-                            Last name*:
-                            <input type="text" id="last-name">
+                        </div>
+                        <div>
+                            <label for="last-name">
+                                Last name*:
+                            </label>
+                            <br>
+                            <input type="text" id="last-name" name="l-name">
 
-                        </label>
-                    </div>
-                    <div>
-                        <label for="email">
-                            Email*:
-                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="email">
+                                Email*:
+                            </label>
+                            <br>
+                            <input type="email" id="email" name="email">
 
-                        </label>
-                    </div>
-                    <div>
-                        <label for="phone-number">
-                            Phone number:
-                            <input type="tel" id="phone-number">
-                        </label>
-                    </div>
-                    <div>
-                        <label for="password">
-                            Password*:
-                            <input type="password" id="password">
-                        </label>
-                    </div>
-                    <div>
-                        <label for="c-password">
-                            Confirm password*:
-                            <input type="password" id="c-password">
-                        </label>
+                        </div>
+                        <div>
+                            <label for="phone-number">
+                                Phone number:
+                            </label>
+                            <br>
+                            <input type="tel" id="phone-number" name="phone">
+                        </div>
+                        <div>
+                            <label for="password">
+                                Password*:
+                            </label>
+                            <br>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div>
+                            <label for="c-password">
+                                Confirm password*:
+                            </label>
+                            <br>
+                            <input type="password" id="c-password" name="c-password">
+                        </div>
                     </div>
                 </div>
-                <button type="submit">create account</button>
+                <button type="submit" class="submit">create account</button>
             </form>
-            <p>already have an account? <span><a href="">Log in</a></span></p>
+            <p class="login-info">already have an account? <span><a href="">Log in</a></span></p>
         </section>
 
     </main>

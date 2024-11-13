@@ -4,6 +4,97 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
+    min-height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    height: 100%;
     background-color: aliceblue;
+    background: url(maxresdefault.jpg) center no-repeat;
+    background-size: cover;
+}
+
+aside {
+    width: 45%;
+    margin-top: 85px;
+}
+
+.logo {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    background-color: aliceblue;
+}
+
+.register-info {
+    padding: 0 15px;
+}
+
+.register-info, form, .login-info {
+    margin-top: 30px;
+}
+
+.register-info p {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.register-info p:last-child {
+    font-style: italic;
+}
+
+form > div {
+    padding: 25px;
+    background-color: #f7fafd;
+    box-shadow: 0px 2px 6px -2px #000000;
+}
+
+.input-info {
+    margin: 15px 0;
+}
+
+.input-info span {
+    font-style: italic;
+}
+
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-field div {
+    display: block;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.submit {
+    margin: 15px;
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #adff2f;
+    border-color: green;
+    cursor: pointer;
+}
+
+.submit:hover, .submit:focus {
+    background-color: #8dd127;
+    color: aliceblue;
+}
+
+.login-info {
+    margin-bottom: 10px;
+    padding: 0 15px;
 }
