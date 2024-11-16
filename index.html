@@ -12,7 +12,7 @@
     <main>
         <aside>
             <div class="logo">
-                <img src="cupcake-logo.png" alt="logo">
+                <img src="logo.png" alt="logo">
             </div>
         </aside>
         <section>
@@ -22,7 +22,7 @@
                     molestiae ipsa iste doloribus inventore!</p>
                 <p>blah blah blah</p>
             </div>
-            <form action="">
+            <form action="#" method="post">
                 <div>
 
 
@@ -38,44 +38,54 @@
                                 First name*:
                             </label>
                             <br>
-                            <input type="text" id="first-name" name="f-name">
+                            <input type="text" id="first-name" name="f-name" placeholder="First Name" required pattern="\w+">
+                            <br>
+                            <p class="input-error">name can not have a special charcter.</p>
                         </div>
                         <div>
                             <label for="last-name">
                                 Last name*:
                             </label>
                             <br>
-                            <input type="text" id="last-name" name="l-name">
-
+                            <input type="text" id="last-name" name="l-name" placeholder="Last Name" required pattern="\w+">
+                            <br>
+                            <p class="input-error">name can not have a special charcter.</p>
                         </div>
                         <div>
                             <label for="email">
                                 Email*:
                             </label>
                             <br>
-                            <input type="email" id="email" name="email">
-
+                            <input type="email" id="email" name="email" placeholder="email@email.com" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                            <br>
+                            <p class="input-error">must be a vaild email.</p>
                         </div>
                         <div>
                             <label for="phone-number">
                                 Phone number:
                             </label>
                             <br>
-                            <input type="tel" id="phone-number" name="phone">
+                            <input type="tel" id="phone-number" name="phone" placeholder="1-471-249-5827" >
+                            <br>
+                            <p class="input-error">(optional) must be a vaild phone number. (###-###-####)</p>
                         </div>
                         <div>
                             <label for="password">
                                 Password*:
                             </label>
                             <br>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" minlength="8" placeholder="8+ charcters" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <br>
+                            <p class="input-error">Must contain at least one number, <br> one uppercase letter, <br> one lowercase letter, <br> and at least 8 or more characters.</p>
                         </div>
                         <div>
                             <label for="c-password">
                                 Confirm password*:
                             </label>
                             <br>
-                            <input type="password" id="c-password" name="c-password">
+                            <input type="password" id="c-password" name="c-password" minlength="8" placeholder="Confirm password" required>
+                            <br>
+                            <p class="input-error">must be the same as password.</p>
                         </div>
                     </div>
                 </div>
